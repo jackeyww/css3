@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style/animate.css">
+	<link rel="stylesheet" type="text/css" href="style/index.css">
+	<link rel="stylesheet" type="text/css" href="dist/css/swiper.min.css">
+	<script type="text/javascript" src="dist/js/swiper.min.js"></script>
+</head>
+<body>
+	<div class="phone">
+		<div class="wrapAll">
+			<div class="jump">
+				<a href="javascript:;">跳过></a>
+			</div>
+			<div class="swiper-container">
+			    <div class="swiper-wrapper">
+			        <div class="swiper-slide">
+			        	<div class="image" id="imgae1">
+			        		<div class="cloud">
+			        			<img class="cloud1 firstAm" src="image/cloud1.png">
+			        			<img class="cloud2 firstAm" src="image/cloud2.png">
+			        		</div>
+			        		<img class="sun firstAm" src="image/sun.png">
+			        		<img class="home firstAm" src="image/home.png">
+			        		<img class="lawn firstAm" src="image/lawn.png">
+			        		<img class="line1 firstAm" src="image/line1.png">
+			        		<img class="line2 firstAm" src="image/line2.png">
+			        		<img class="line3 firstAm" src="image/line3.png">
+			        		<img class="line4 firstAm" src="image/line4.png">
+			        		<img class="line5 firstAm" src="image/line5.png">
+			        	</div>
+			        	<div class="word">
+			        		<h3 class="animated bounceInLeft" id="word1">原生态</h3>
+			        		<p class="animated bounceInRight" id="word2">无污染生态农场<br>健康营养有保障</p>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide slide2">
+			        	<div class="image" id="imgae2">
+			        		<div class="car">
+			        			<img class="chexiang" src="image/chexiang.png">
+			        			<img class="chetou" src="image/chetou.png">
+			        			<img class="feng1" src="image/feng1.png">
+			        			<img class="feng2" src="image/feng2.png">
+			        			<img class="wheel1 pubwheel" src="image/wheel1.png">
+			        			<img class="wheel2 pubwheel" src="image/wheel1.png">
+			        			<img class="wheel3 pubwheel" src="image/wheel1.png">
+			        			<img class="wheel4 pubwheel" src="image/wheel1.png">
+			        			<img class="wheel5 pubwheel" src="image/wheel1.png">
+			        			<img class="gan1" src="image/gan.png">
+			        			<img class="gan2" src="image/gan.png">
+			        			<div class="wheel lun1 pubwheel">
+			        				<p class=""></p>
+			        				<p class=""></p>
+			        			</div>
+			        			<div class="wheel lun2 pubwheel">
+			        				<p class=""></p>
+			        				<p class=""></p>
+			        			</div>
+			        			<div class="wheel lun3 pubwheel">
+			        				<p class=""></p>
+			        				<p class=""></p>
+			        			</div>
+			        			<div class="wheel lun4 pubwheel">
+			        				<p class=""></p>
+			        				<p class=""></p>
+			        			</div>
+			        			<div class="wheel lun5 pubwheel">
+			        				<p class=""></p>
+			        				<p class=""></p>
+			        			</div>
+			        		</div>
+			        	</div>
+			        	<div class="word">
+			        		<h3 class="animated bounceInLeft" id="word3">专业配送</h3>
+			        		<p class="animated bounceInRight" id="word4">最专业的配送团队<br>保证货物以最快的速度送至您的手中</p>
+			        	</div>
+			        </div>
+			        <div class="swiper-slide">
+			        	<div class="image" id="imgae3">
+			        		<img class="card" src="image/card.png">
+			        		<img class="green" src="image/green.png">
+			        		<div class="coin1">
+			        			<img src="image/coin1.png">
+			        			<span class="shadow"></span>
+			        		</div>
+			        		<div class="coin2">
+			        			<img src="image/coin2.png">
+			        			<span class="shadow"></span>
+			        		</div>
+			        		<div class="coin3">
+			        			<img src="image/coin1.png">
+			        			<span class="shadow"></span>
+			        		</div>
+			        	</div>
+			        	<div class="word">
+			        		<h3 class="animated bounceInLeft" id="word5">丰富折扣</h3>
+			        		<p class="animated bounceInRight" id="word6">邀请好友获取优惠券<br>每周大折扣助您狂欢</p>
+			        	</div>
+			        	<div class="join">
+			        		<a href="###" class="start">立即体验</a>
+			        	</div>
+			        </div>
+			    </div>
+			    <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="homebt">
+			<span></span>
+			<span></span>
+		</div>
+		<div class="head">
+			<span></span>&nbsp;&nbsp;&nbsp;
+			<i><small></small></i>
+		</div>
+	</div>
+	
+	<script type="text/javascript">
+
+			var word1 = document.getElementById('word1');
+			var word2 = document.getElementById('word2'); 
+			var firstAms = document.getElementsByClassName('firstAm');
+			function firstPageAnimat(){
+				word1.style.animation = "bounceInLeft 1s";
+				word2.style.animation = "bounceInRight 1s";
+				
+				for(var i=0;i<firstAms.length;i++){
+					firstAms[0].style.animation = "cloud1 8s infinite 3s linear";
+					firstAms[0].style.animationFillMode = "both";
+
+					firstAms[1].style.animation = "cloud2 6s infinite 3.3s linear";
+					firstAms[1].style.animationFillMode = "both";
+
+					firstAms[2].style.animation = "sunup 1s 2.4s";
+					firstAms[2].style.animationFillMode = "both";
+
+					firstAms[3].style.animation = "homeup 0.8s 1.6s";
+					firstAms[3].style.animationFillMode = "both";
+
+					firstAms[4].style.animation = "lawnup 0.5s 1.2s";
+					firstAms[4].style.animationFillMode = "both";
+
+					firstAms[5].style.animation = "bounceInRight 0.7s";
+					firstAms[5].style.animationFillMode = "both";
+
+					firstAms[6].style.animation = "bounceInRight 0.7s 0.2s";
+					firstAms[6].style.animationFillMode = "both";
+
+					firstAms[7].style.animation = "bounceInRight 0.7s 0.4s";
+					firstAms[7].style.animationFillMode = "both";
+
+					firstAms[8].style.animation = "bounceInRight 0.7s 0.6s";
+					firstAms[8].style.animationFillMode = "both";
+
+					firstAms[9].style.animation = "bounceInRight 0.7s 0.8s";
+					firstAms[9].style.animationFillMode = "both";
+				}
+			}
+			function clearFirstPageAnimat(){
+				word1.style.animation = "none";
+				word2.style.animation = "none";
+				for(var i=0;i<firstAms.length;i++){
+					firstAms[i].style.animation = "none";
+				}
+			}
+			firstPageAnimat();//默认第一页一打开就开始动画
+
+			// 第二页动画
+			var word3 = document.getElementById('word3');
+			var word4 = document.getElementById('word4');
+			var car = document.getElementsByClassName('car')[0];
+			function secondPafeAnimat(){
+				word3.style.animation = "bounceInLeft 1.2s";
+				word4.style.animation = "bounceInRight 1.2s";
+				car.style.animation = "carin 1.2s";
+				car.style.animationFillMode = "both";
+			}
+			function clearSecondPafeAnimat(){
+				word3.style.animation = "none";
+				word4.style.animation = "none";
+				car.style.animation = "none";
+			}
+			//第三页动画
+			var card = document.getElementsByClassName('card')[0];
+			var green = document.getElementsByClassName('green')[0];
+			var word5 = document.getElementById('word5');
+			var word6 = document.getElementById('word6');
+			var coin1 = document.getElementsByClassName('coin1')[0];
+			var coin2 = document.getElementsByClassName('coin2')[0];
+			var coin3 = document.getElementsByClassName('coin3')[0];
+			var start = document.getElementsByClassName('start')[0];
+			var join = document.getElementsByClassName('join')[0];
+			var shadows = document.getElementsByClassName('shadow');
+			function thirdPageAnimat(){
+				card.style.animation = "cardin 1s";
+				green.style.animation = "greenin 1s";
+				word5.style.animation = "bounceInLeft 1s";
+				word6.style.animation = "bounceInRight 1s";
+
+				coin1.style.animation = "coin1 1.5s 1s";
+				coin1.style.animationFillMode = "both";
+
+				coin2.style.animation = "coin2 1.5s 1.5s";
+				coin2.style.animationFillMode = "both";
+
+				coin3.style.animation = "coin3 1.5s 1.3s";
+				coin3.style.animationFillMode = "both";
+
+				join.style.animation = "join 1s 2.5s";
+				join.style.animationFillMode = "both";
+
+				start.style.animation = "start 0.5s 3s infinite";
+				start.style.animationFillMode = "both";
+
+				shadows[0].style.animation = "shadow1 6s 0.8s infinite";
+				shadows[0].style.animationFillMode = "both";
+
+				shadows[1].style.animation = "shadow1 6s 1.3s infinite";
+				shadows[1].style.animationFillMode = "both";
+
+				shadows[2].style.animation = "shadow1 6s 1.8s infinite";
+				shadows[2].style.animationFillMode = "both";
+			}
+			function clearThirdPageAnimat(){
+				card.style.animation = "none";
+				green.style.animation = "none";
+				word5.style.animation = "none";
+				word6.style.animation = "none";
+				coin1.style.animation = "none";
+				coin3.style.animation = "none";
+				coin2.style.animation = "none";
+				join.style.animation = "none";
+				start.style.animation = "none";
+				shadows[0].style.animation="none";
+				shadows[1].style.animation="none";
+				shadows[2].style.animation="none";
+			}
+		  	var mySwiper = new Swiper ('.swiper-container', {
+			    pagination: {
+			      el: '.swiper-pagination',
+			      clickable:true,
+			    },
+			    on: {
+				    slideChangeTransitionEnd: function(){
+				    	// 切换结束时，告诉我现在是第几个slide
+				      	console.log(this.activeIndex);
+				      	if(this.activeIndex == 0){
+				      		firstPageAnimat();
+				      	}else{
+				      		clearFirstPageAnimat();
+				      	}
+				      	if(this.activeIndex == 1){
+				      		secondPafeAnimat();
+				      	}else{
+				      		clearSecondPafeAnimat();
+				      	}
+				      	if(this.activeIndex == 2){
+				      		thirdPageAnimat();
+				      	}else{
+				      		clearThirdPageAnimat();
+				      	}
+				    },
+				},
+			}) 
+	</script>
+</body>
+</html>
